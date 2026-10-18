@@ -1,0 +1,38 @@
+{
+  "name": "korean-elementary-learning-map-mcp",
+  "version": "0.1.0",
+  "mcpName": "io.github.neohum/korean-elementary-learning-map-mcp",
+  "description": "한국 초등 2022 개정 교육과정 학습 지도 MCP 서버 (초등 11개 교과 · 620개 성취기준 · 1,956개 학습 주제 · 2,293개 선수관계 · 152개 클러스터)",
+  "type": "module",
+  "license": "MIT",
+  "author": "neohum",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neohum/korean-elementary-learning-map-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neohum/korean-elementary-learning-map-mcp/issues"
+  },
+  "homepage": "https://github.com/neohum/korean-elementary-learning-map-mcp#readme",
+  "bin": {
+    "korean-elementary-learning-map-mcp": "src/cli.mjs"
+  },
+  "files": [
+    "src/",
+    "data/",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "start": "node src/cli.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  }
+}
